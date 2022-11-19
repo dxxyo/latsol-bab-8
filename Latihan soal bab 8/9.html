@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var harga = [
+            [20000, 30000, 40000],
+            [200000, 300000, 400000],
+            [2000000, 3000000, 4000000],
+            [2000000000, 3000000000, 4000000000],
+        ];
+        for (let i = 0; i < harga.length; i++) {
+            for (let x = 0; x < harga[i].length; x++) {
+                document.write("Harga barang: ",harga[i][x], "; Harga dengan pajak penjualan 9%: ", harga[i][x] + (harga[i][x] * 9/100))       
+                document.write("<br>")  
+
+            }   
+            document.write("<br>")         
+            document.write("<br>")         
+
+        }
+    </script>
+</body>
+</html>

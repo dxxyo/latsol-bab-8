@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var date = new Date();
+        var today = date.getDate() + "/" + date.getMonth() + "/" + date.getFullYear()
+        var deadline= new Date()
+        deadline.setDate(date.getDate()+90)
+        var user_deadline = deadline.getDate() + "/" + deadline.getMonth() + "/" + deadline.getFullYear()
+        document.write("Hari ini tanggal: ", today, "<br>")
+        document.write("deadline pada tanggal: ", user_deadline)
+    </script>
+</body>
+</html>

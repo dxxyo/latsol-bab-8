@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var flowers = ["Matahari", "Tulip", "Rafflessia", "Mawar", "Daisy", "Melati", "Kamboja", "Lili", "Teratai", "Anggrek"];
+        var randomFlower = () => {
+            var max = Math.random() * flowers.length
+            return flowers[Math.round(max)]
+        };
+        document.write(randomFlower())
+    </script>
+</body>
+</html>

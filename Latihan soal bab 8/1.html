@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nomor 1 bab 8</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var hewan = ["bear", "penguin", "fox", "mouse", "girrafe"];
+        i = 0
+        var showAnimal = (variable) => {
+            hewan.forEach(animal => {
+                document.write(hewan[variable], "<br>")
+                variable++
+            });
+        }
+     
+        showAnimal(i)
+        hewan.push("cow");
+        hewan.push("chicken");
+        document.write("PENAMBAHAN CHICKEN DAN COW DAN DI SORT <br>")
+        hewan.sort()
+        var x = 0
+        showAnimal(x);
+    </script>
+</body>
+</html>

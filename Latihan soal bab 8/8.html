@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nomor 1</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="text/javascript">
+        var pi = Math.PI;
+        var r = parseFloat(prompt("Masukkan jari jari lingkaran:"));
+        var lingkaran = new Object();
+        lingkaran.jari_jari = r;
+        lingkaran.keliling = calculateKeliling(r).toFixed(1);
+        
+        function calculateKeliling(r) {
+            return (2 * pi * r)
+        };
+    </script>
+</head>
+<body>
+    <script>
+        document.write("<div class='absolute mx-auto my-auto top-0 bottom-0 right-0 left-0 rounded-full aspect-square text-center flex items-center p-10 bg-blue-200 text-xl w-max h-max'>Jari jari lingkaran: ", lingkaran.jari_jari, "<br>" );
+        document.write("Keliling lingakaran: ", lingkaran.keliling, " cm </div>");
+    </script>
+</body>
+</html>
